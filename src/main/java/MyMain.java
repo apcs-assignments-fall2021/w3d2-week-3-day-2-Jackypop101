@@ -7,8 +7,12 @@ public class MyMain {
     //     isLetter('?') => false
     //     isLetter('4') => false
     public static boolean isLetter(char c) {
-        // REPLACE WITH YOUR CODE HERE
-        return false;
+        if ((c>='a' && c<='z') || (c>='A' && c<='Z')) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     // This method is given two chars as input, c1 and c2
@@ -21,7 +25,13 @@ public class MyMain {
     //                             'f'
     //                             'g'
     public static void printChars(char c1, char c2) {
-        // REPLACE WITH YOUR CODE HERE
+        int x = c1;
+        System.out.println(c1);
+        while (x <= (int)c2-1) {
+            x += 1;
+            char y = (char) x;
+            System.out.println(y);
+        }
     }
 
     // Given a char ch, and returns the next letter in the alphabet.
